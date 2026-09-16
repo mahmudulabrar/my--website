@@ -1,217 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahmudul Abrar Tahmid</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<title>Mahmudul Abrar Tahmid</title>
 
-        body {
-            background: #f5f7fa;
-            color: #222;
-            line-height: 1.6;
-        }
+<style>
 
-        nav {
-            background: #111827;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
 
-        nav h2 {
-            color: white;
-        }
+body{
+    background:#0f172a;
+    color:white;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 8%;
+    background:rgba(15,23,42,.9);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    backdrop-filter:blur(10px);
+}
 
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 30px;
-        }
+nav h2{
+    font-size:24px;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:15px;
+}
 
-        .hero p {
-            font-size: 20px;
-            color: #555;
-        }
+nav a:hover{
+    color:#38bdf8;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background: #111827;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:100px 20px 50px;
+}
 
-        section {
-            padding: 70px 10%;
-            text-align: center;
-        }
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
 
-        section h2 {
-            font-size: 32px;
-            margin-bottom: 25px;
-        }
+.hero h1 span{
+    color:#38bdf8;
+}
 
-        .card-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+.hero p{
+    color:#cbd5e1;
+    font-size:20px;
+}
 
-        .card {
-            background: white;
-            padding: 25px;
-            width: 280px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        }
+.buttons{
+    margin-top:30px;
+}
 
-        footer {
-            background: #111827;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    margin:5px;
+    border-radius:30px;
+    text-decoration:none;
+    background:#38bdf8;
+    color:#0f172a;
+    font-weight:bold;
+}
 
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 35px;
-            }
+.btn:hover{
+    transform:scale(1.05);
+}
 
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
+.btn2{
+    background:transparent;
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+}
 
-            nav a {
-                margin: 5px;
-            }
-        }
-    </style>
+section{
+    padding:100px 10%;
+    text-align:center;
+}
+
+section h2{
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.about{
+    max-width:750px;
+    margin:auto;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    width:280px;
+    padding:30px;
+    background:#1e293b;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(56,189,248,.15);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+.contact p{
+    color:#cbd5e1;
+    margin:10px;
+}
+
+footer{
+    padding:30px;
+    text-align:center;
+    background:#020617;
+    color:#94a3b8;
+}
+
+@media(max-width:700px){
+
+    nav{
+        padding:15px 5%;
+    }
+
+    nav a{
+        margin-left:8px;
+        font-size:12px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:80px 7%;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
-    <nav>
-        <h2>Abrar</h2>
+<nav>
 
-        <div>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+<h2>Abrar.</h2>
 
-    <div class="hero">
-        <div>
-            <h1>Mahmudul Abrar Tahmid</h1>
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
 
-            <p>
-                Student | Learner | Future Educator
-            </p>
+</nav>
 
-            <a href="#about" class="btn">
-                Explore My Website
-            </a>
-        </div>
-    </div>
 
-    <section id="about">
-        <h2>About Me</h2>
+<section class="hero" id="home">
 
-        <p>
-            Hello! I am Mahmudul Abrar Tahmid.
-            I am a student who is interested in learning,
-            technology, education and personal development.
-        </p>
-    </section>
+<div>
 
-    <section id="education">
-        <h2>Education</h2>
+<h1>Hello, I'm <span>Abrar</span></h1>
 
-        <div class="card-container">
+<p>Student • Learner • Future Educator</p>
 
-            <div class="card">
-                <h3>B.Ed</h3>
-                <p>
-                    Currently pursuing my Bachelor of Education.
-                </p>
-            </div>
+<div class="buttons">
 
-            <div class="card">
-                <h3>Learning</h3>
-                <p>
-                    Interested in education, ICT and technology.
-                </p>
-            </div>
+<a href="#about" class="btn">
+Explore Me
+</a>
 
-        </div>
-    </section>
+<a href="#contact" class="btn btn2">
+Contact Me
+</a>
 
-    <section id="skills">
-        <h2>My Skills</h2>
+</div>
 
-        <div class="card-container">
+</div>
 
-            <div class="card">
-                <h3>ICT</h3>
-                <p>Basic knowledge of Information and Communication Technology.</p>
-            </div>
+</section>
 
-            <div class="card">
-                <h3>Communication</h3>
-                <p>Interested in improving English communication skills.</p>
-            </div>
 
-            <div class="card">
-                <h3>Learning</h3>
-                <p>Always interested in learning new things.</p>
-            </div>
+<section id="about">
 
-        </div>
-    </section>
+<h2>About Me</h2>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
+<p class="about">
 
-        <p>
-            Email: your-email@example.com
-        </p>
+Hello! I am Mahmudul Abrar Tahmid.
+I am a student and an aspiring educator.
+I am interested in education, ICT, technology,
+English communication and personal development.
 
-        <a href="mailto:your-email@example.com" class="btn">
-            Send Email
-        </a>
-    </section>
+I believe that learning is a continuous journey,
+and I am always trying to improve myself.
 
-    <footer>
-        <p>© 2026 Mahmudul Abrar Tahmid. All Rights Reserved.</p>
-    </footer>
+</p>
+
+</section>
+
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>B.Ed</h3>
+
+<p>
+Bachelor of Education student.
+Currently developing knowledge
+and skills in education and teaching.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>ICT</h3>
+
+<p>
+Interested in Information and
+Communication Technology and
+its application in education.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Education</h3>
+
+<p>
+Learning about teaching,
+educational psychology and
+modern education.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>ICT</h3>
+
+<p>
+Basic web technology,
+digital content and ICT skills.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Communication</h3>
+
+<p>
+Working on English speaking,
+communication and presentation skills.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+<p>
+Want to connect with me?
+</p>
+
+<a class="btn"
+href="mailto:your-email@example.com">
+
+Send Email
+
+</a>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Mahmudul Abrar Tahmid
+</p>
+
+</footer>
 
 </body>
 </html>
