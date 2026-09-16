@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmudul Abrar Tahmid</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #111827;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Abrar</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h1>Mahmudul Abrar Tahmid</h1>
+
+            <p>
+                Student | Learner | Future Educator
+            </p>
+
+            <a href="#about" class="btn">
+                Explore My Website
+            </a>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I am Mahmudul Abrar Tahmid.
+            I am a student who is interested in learning,
+            technology, education and personal development.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>B.Ed</h3>
+                <p>
+                    Currently pursuing my Bachelor of Education.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Learning</h3>
+                <p>
+                    Interested in education, ICT and technology.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>ICT</h3>
+                <p>Basic knowledge of Information and Communication Technology.</p>
+            </div>
+
+            <div class="card">
+                <h3>Communication</h3>
+                <p>Interested in improving English communication skills.</p>
+            </div>
+
+            <div class="card">
+                <h3>Learning</h3>
+                <p>Always interested in learning new things.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            Email: your-email@example.com
+        </p>
+
+        <a href="mailto:your-email@example.com" class="btn">
+            Send Email
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Mahmudul Abrar Tahmid. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
